@@ -1,0 +1,23 @@
+.blog-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+@media only screen and (max-width: 576px) {
+    .blog-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:580px) and (max-width: 992px) {
+    .blog-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width: 1400px) {
+    .blog-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

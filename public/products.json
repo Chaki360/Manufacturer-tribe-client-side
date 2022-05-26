@@ -1,0 +1,50 @@
+[
+    {
+        "name": "NARROW CROWN",
+        "image": "https://i.ibb.co/HtX9FP1/Milwaukee-M18-FUEL-Narrow-Crown-Stapler.jpg",
+        "description": "Pro carpenters and tradesmen will love the Milwaukee M18 FUEL narrow crown stapler. We first got our hands on it back in 2019 and it made an impression. Like the Metabo HPT cordless framing nailer, the Milwaukee M18 Fuel 18-gauge 1/4-inch narrow crown cordless stapler has zero firing delay when you pull the trigger. ",
+        "minimumOrder": 30,
+        "availableQuantity": 550,
+        "price": "350"
+    },
+    {
+        "name": "NAILING PNEUMATIC",
+        "image": "https://i.ibb.co/rpG4CMc/De-Walt-pin-nailer-loading.jpg",
+        "description": "The DeWalt 23-gauge pin nailer really takes up the mantel from the venerable Porter-Cable PIN138 pin nailer we loved and used for years. Adding to the design, DeWalt created an exceptionally well-designed pinner that easily installs finer workpieces while eliminating the need to fill nail holes. ",
+        "minimumOrder": 50,
+        "availableQuantity": 776,
+        "price": "405"
+    },
+    {
+        "name": "POWERED PINNER",
+        "image": "https://i.ibb.co/M5VB0dw/Milwaukee-2540-20-pin-nailer.jpg",
+        "description": "We find it difficult not to like the Milwaukee M12 cordless pin nailer. It’s lighter and more compact than any other cordless model we’ve used. And when we say lighter and more compact—we mean it. Its performance has also been flawless to date. ",
+        "minimumOrder": 25,
+        "availableQuantity": 447,
+        "price": "170"
+    },
+    {
+        "name": "BOSTITCH COIL",
+        "image": "https://i.ibb.co/gPZHMfM/Senco-F-35-XP-Cordless-Framing-Nailer.jpg",
+        "description": "BOSTITCH RN46 is a pneumatic powered nail gun that has a lot of useful features. This nail gun supports up to 1 ¾ inch nails that can have a maximum gauge rating of 11 gauge. As it is a pneumatic powered nail gun, you will require a compressor with a minimum pressure rating of 7- PSI to use it.  ",
+        "minimumOrder": 15,
+        "availableQuantity": 950,
+        "price": "550"
+    },
+    {
+        "name": "NuMax SFR2190",
+        "image": "https://i.ibb.co/HCppdMQ/6-the-best-nail-gun-min.jpg",
+        "description": "As Amazon's Choice for the best framing nailer, the NuMax SFR2190 pneumatic nail gun is a customer favorite with thousands of buyer reviews and a 92% positive rating. Despite its heavy-duty magnesium build and durable construction.  ",
+        "minimumOrder": 25,
+        "availableQuantity": 450,
+        "price": "135"
+    },
+    {
+        "name": "SENCO STAPLING",
+        "image": "https://i.ibb.co/M8SwFrC/4-the-best-nail-gun-min.jpg",
+        "description": "The magnesium body of the Senco SLS150Mg 18-gauge Crown Stapler makes it weigh a scant 2.6 pounds. A thumbwheel sets the depth of drive, and a simple selector switch swaps between bump fire and sequential fire modes.  ",
+        "minimumOrder": 45,
+        "availableQuantity": 800,
+        "price": "275"
+    }
+]
