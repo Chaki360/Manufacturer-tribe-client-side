@@ -31,6 +31,7 @@ const DeleteProduct = () => {
 
                             <th>Name</th>
                             <th>Price per pics</th>
+                            <th>Available</th>
                             <th>Remove</th>
                         </tr>
                     </thead>
@@ -40,10 +41,12 @@ const DeleteProduct = () => {
 
                             <td>{product.name}</td>
                             <td>${product.price}</td>
+                            <td>{product.availableQuantity}</td>
+
 
                             <section>
 
-                                <label for="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 modal-button">Remove</label>
+                                <td><label for="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 text-md modal-button">Remove</label></td>
 
 
                                 <input type="checkbox" id="tribal-modal" className="modal-toggle" />

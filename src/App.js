@@ -21,6 +21,7 @@ import Product from "./Pages/Product/Product";
 import AddProducts from "./Pages/AddProducts/AddProducts";
 import DeleteProduct from "./Pages/Dashboard/DeleteProduct/DeleteProduct";
 import NewsLatter from "./Pages/NewsLatter/NewsLatter";
+import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='review' element={<Review></Review>} />
           <Route path='my-profile' element={<MyProfile></MyProfile>} />
           <Route path='add-product' element={<AddProducts></AddProducts>} />
+          <Route path='manage-orders' element={<ManageAllOrders></ManageAllOrders>} />
           <Route path='delete-product' element={<DeleteProduct></DeleteProduct>} />
         </Route>
 
