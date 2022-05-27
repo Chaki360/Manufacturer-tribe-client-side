@@ -37,7 +37,7 @@ const Register = () => {
     if (user) {
         navigate(from, { replace: true });
         toast.success('Registration successful')
-        toast.info(displayName)
+
     }
     return (
         <div>
