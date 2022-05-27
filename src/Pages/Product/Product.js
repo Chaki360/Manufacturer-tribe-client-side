@@ -16,9 +16,10 @@ const Product = () => {
             .then(data => setProduct(data))
     }, []);
 
-    const [user] = useAuthState(auth)
+    const [user, loading] = useAuthState(auth)
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
+
         const url = `https://manufacture-tribe.herokuapp.com/order`;
         fetch(url, {
             method: 'POST',
@@ -52,19 +53,31 @@ const Product = () => {
                         </div>
 
                     </div>
-                    <div className="w-full lg:w-1/3 h-24 dark:border-gray-700 lg:h-64 border-t lg:border-t-0 lg:border-r lg:border-l lg:rounded-r dark:bg-gray-700 bg-gray-100">
+                    <div className="w-full lg:w-1/3 h-24 dark:border-gray-700 lg:h-96 border-t lg:border-t-0 lg:border-r lg:border-l lg:rounded-r dark:bg-gray-700 bg-gray-100">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex flex-col lg:mr-16">
+                                <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Product Name</label>
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={product.name} {...register("productName")} />
+                            </div>
+                            <div className="flex flex-col lg:mr-16">
+                                <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Your Name</label>
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.displayName} {...register("userName")} />
+                            </div>
+                            <div className="flex flex-col lg:mr-16">
+                                <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Your Email</label>
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.email} {...register("email")} />
+                            </div>
+                            <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Address</label>
-                                <input autocomplete="off" type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Enter your address here" />
+                                <input autocomplete="off" type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Enter your address here" {...register("address")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal mb-2">Phone</label>
-                                <input id="email" autocomplete="off" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Your Phone number" />
+                                <input type="text" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Your Phone number" {...register("phone")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label for="email" className="text-gray-800  dark:text-gray-100 text-sm font-bold leading-tight tracking-normal mb-2">Order number</label>
-                                <input id="email" autocomplete="off" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Number you want to order" />
+                                <input type="number" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Number you want to order" {...register("orderNumber")} />
                             </div>
 
 
