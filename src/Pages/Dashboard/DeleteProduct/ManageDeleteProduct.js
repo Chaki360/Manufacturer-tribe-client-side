@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 
 
 const ManageDeleteProduct = ({ product }) => {
+    const { name, price, _id } = product
     const handleDeleteProduct = id => {
 
 
