@@ -20,7 +20,7 @@ const PricingPlan = () => {
                         <div className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30">
                             <div className="md:flex items-center justify-between">
                                 <h2 className="text-2xl font-semibold leading-6 text-primary">Startup</h2>
-                                <p className="text-2xl font-semibold md:mt-0 mt-4 leading-6 text-primary">FREE</p>
+                                <p className="text-2xl font-semibold md:mt-0 mt-4 leading-6 text-green-600">FREE</p>
                             </div>
                             <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">Full access to all features and no credit card required</p>
                         </div>
@@ -29,7 +29,7 @@ const PricingPlan = () => {
                             <div className="w-full p-8">
                                 <div className="md:flex items-center justify-between">
                                     <h2 className="text-2xl font-semibold leading-6 text-primary">Growth And Establishment</h2>
-                                    <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-gray-800">
+                                    <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-blue-600">
                                         $50<span className="font-normal text-base">/mo</span>
                                     </p>
                                 </div>
@@ -39,8 +39,8 @@ const PricingPlan = () => {
                         <div className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
                             <div className="md:flex items-center justify-between">
                                 <h2 className="text-2xl font-semibold leading-6 text-primary">Expansion</h2>
-                                <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-gray-800">
-                                    $75<span className="font-normal text-base">/mo</span>
+                                <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-yellow-600">
+                                    $100<span className="font-normal text-base">/mo</span>
                                 </p>
                             </div>
                             <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">Unlimited products features and dedicated support channels</p>
