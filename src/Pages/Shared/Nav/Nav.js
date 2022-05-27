@@ -7,7 +7,7 @@ import auth from '../../../Firebase/Firebase.init';
 const Nav = () => {
     const navigate = useNavigate()
     const [user] = useAuthState(auth);
-
+    console.log(user.photoURL)
     const handleLogOut = () => {
         signOut(auth)
         navigate('/login')
@@ -55,3 +55,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
