@@ -29,17 +29,20 @@ const AddProducts = () => {
 
     };
     return (
-        <div className=' items-center justify-center'>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2 appearance-none rounded-none relative block w-full px-5 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Enter product name' type='text' {...register("name")} />
-                <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Enter available quantity' type="number" {...register("availableQuantity")} />
-                <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Minimum order Quantity ' type="number" {...register("minimumOrder")} />
-                <textarea className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Description' type="text" {...register("description")} />
-                <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Image URL' type="text" {...register("image")} />
-                <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm ' placeholder='Enter product price' type="text" {...register("price")} />
-                <input className=' bg-primary hover:bg-violet-600 text-white block w-full px-3 py-3' value='Add a product' type="submit" />
-            </form>
-        </div>
+        <section>
+            <h1 className='text-4xl mb-8 mt-5  text-center font-bold text-violet-800'>Add a new product </h1>
+            <div className=' items-center justify-center'>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <input className='mb-2 uppercase appearance-none rounded-none relative block w-full px-5 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Enter product name' type='text' {...register("name")} />
+                    <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Enter available quantity' type="number" {...register("availableQuantity")} />
+                    <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Minimum order Quantity ' type="number" {...register("minimumOrder")} />
+                    <textarea className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Description' type="text" {...register("description")} />
+                    <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm' placeholder='Image URL' type="text" {...register("image")} />
+                    <input className='mb-2 appearance-none rounded-none relative block w-full px-3 py-2 border border-slate-500  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm ' placeholder='Enter product price' type="text" {...register("price")} />
+                    <input className=' bg-primary hover:bg-violet-600 text-white block w-full px-3 py-3' value='Add a product' type="submit" />
+                </form>
+            </div>
+        </section>
     );
 };
 
