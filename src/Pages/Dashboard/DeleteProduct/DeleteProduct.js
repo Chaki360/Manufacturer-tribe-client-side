@@ -20,7 +20,10 @@ const DeleteProduct = () => {
 
             })
 
-    }
+    };
+
+
+
     return (
         <div>
             <div className="overflow-x-auto">
@@ -32,7 +35,7 @@ const DeleteProduct = () => {
                             <th>Name</th>
                             <th>Price per pics</th>
                             <th>Available</th>
-                            <th>Remove</th>
+                            <th>Removal</th>
                         </tr>
                     </thead>
                     <tbody>

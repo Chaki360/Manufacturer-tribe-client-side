@@ -22,6 +22,7 @@ import AddProducts from "./Pages/AddProducts/AddProducts";
 import DeleteProduct from "./Pages/Dashboard/DeleteProduct/DeleteProduct";
 import NewsLatter from "./Pages/NewsLatter/NewsLatter";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
+import Payment from "./Pages/Payment/Payment";
 
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<MyPortfolio />} />
         <Route path='/product/:productId' element={<PrivateRoute><Product /></PrivateRoute>} />
+        <Route path='/payment' element={<PrivateRoute><Payment /></PrivateRoute>} />
         <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>} >
           <Route index element={<MyOrders></MyOrders>} />
           <Route path='review' element={<Review></Review>} />

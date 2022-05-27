@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../../Firebase/Firebase.init';
 
 const ManageAllOrders = () => {
@@ -13,7 +14,21 @@ const ManageAllOrders = () => {
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
-    }, [user]);
+    }, [orders]);
+    const handleDeleteOrder = id => {
+
+        const url = `http://localhost:5000/order/${id}`
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                toast.warning(`Order has ben deleted `)
+
+            })
+
+    };
 
     return (
         <div>
@@ -29,7 +44,7 @@ const ManageAllOrders = () => {
 
                             <th>Payment status</th>
                             <th>Approval</th>
-                            <th>Order Cancellation</th>
+                            <th>Order Deletation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,8 +57,26 @@ const ManageAllOrders = () => {
                             <td><progress className="progress w-20"></progress>
 
                             </td>
-                            <td> <button className="btn btn-xs btn-success px-2">Approve</button></td>
-                            <td><button className="btn btn-xs btn-error text-white">Cancel Order</button></td>
+                            <td> <button className="btn btn-sm btn-success px-2">Approve</button></td>
+                            <section>
+
+                                <td><label for="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 text-md modal-button">Delete this order</label></td>
+
+
+                                <input type="checkbox" id="tribal-modal" className="modal-toggle" />
+                                <div className="modal bg-violet-50">
+                                    <div className="modal-box">
+                                        <p className="py-4 text-lg">User Email: <span className='text-blue-500'>{order.email}</span></p>
+                                        <label for="tribal-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                        <h3 className="font-bold text-lg ">Product name: <span className='text-emerald-500'> {order.productName}</span></h3>
+                                        <p className="py-4 text-lg">Order Quantity: <span className='text-lime-600'>{order.orderNumber}</span></p>
+
+
+                                        <button for='tribal-model' onClick={() => handleDeleteOrder(order._id)} className='btn-error flex justify-center text-white items-center rounded px-1 py-1'>Confirm Delete</button>
+
+                                    </div>
+                                </div>
+                            </section>
 
 
                         </tr>)}
