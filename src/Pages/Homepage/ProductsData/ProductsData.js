@@ -1,7 +1,12 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../Firebase/Firebase.init';
+import useAdmin from '../../../useAdmin/useAdmin';
 
 const ProductsData = ({ product }) => {
+    const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
 
     const navigate = useNavigate();
     const navigateToPurchase = id => {
@@ -20,8 +25,8 @@ const ProductsData = ({ product }) => {
                 <h2 className='text-bold text-2xl'>Available Quantity:<span className='text-green-600'>{product.availableQuantity}</span></h2>
                 <h2 className='text-bold text-2xl'>Minimum order:<span className='text-orange-600'>{product.minimumOrder}</span></h2>
                 <p>{product.description}</p>
-                <button onClick={() => navigateToPurchase(product._id)} className="btn btn-primary">Purchase
-                </button>
+                {!admin && <button onClick={() => navigateToPurchase(product._id)} className="btn btn-primary">Purchase
+                </button>}
             </div>
         </div>
     );

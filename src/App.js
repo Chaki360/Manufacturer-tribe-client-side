@@ -22,8 +22,8 @@ import AddProducts from "./Pages/AddProducts/AddProducts";
 import DeleteProduct from "./Pages/Dashboard/DeleteProduct/DeleteProduct";
 import NewsLatter from "./Pages/NewsLatter/NewsLatter";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
-import Payment from "./Pages/Payment/Payment";
 import Users from "./Pages/Dashboard/Users/Users";
+import Payment from "./Pages/Dashboard/Payment/Payment";
 
 
 
