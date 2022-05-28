@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase/Firebase.init';
 
+
 const Nav = () => {
     const navigate = useNavigate()
     const [user] = useAuthState(auth);
@@ -11,7 +12,7 @@ const Nav = () => {
     const handleLogOut = () => {
         signOut(auth)
         navigate('/login')
-        localStorage.removeItem('accessToken')
+        localStorage.removeItem()
 
     }
     const menuItems = <>

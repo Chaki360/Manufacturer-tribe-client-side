@@ -5,7 +5,7 @@ import UsersInfo from './UsersInfo';
 const AllUsers = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('https://manufacture-tribe.herokuapp.com/user')
+        fetch('http://localhost:5000/user')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [users]);
@@ -24,7 +24,7 @@ const AllUsers = () => {
                     </thead>
                     <tbody>
 
-                        {users.map(user => <UsersInfo index key={user._id} user={user}></UsersInfo>)}
+                        {users.map(user => <UsersInfo key={user._id} user={user}></UsersInfo>)}
 
                     </tbody>
                 </table>

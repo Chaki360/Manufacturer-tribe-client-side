@@ -24,7 +24,7 @@ const SocialLogin = () => {
         return <Loading />
     }
 
-    if (token) {
+    if (gitUser || gitUser) {
         navigate(from, { replace: true });
         toast.success('Sign In Successful')
 
