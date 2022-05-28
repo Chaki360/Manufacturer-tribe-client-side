@@ -36,7 +36,7 @@ const Register = () => {
         return <Loading />
     }
 
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
         toast.success('Registration successful')
 
