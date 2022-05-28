@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../Firebase/Firebase.init';
 import Loading from '../Pages/Shared/Spinner/Loading';
+import useToken from '../UseToken/UseToken';
 import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -18,6 +19,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [token] = useToken(user);
     if (error) {
 
         toast.error(<p>Error:{error.message}</p>)
@@ -28,7 +30,7 @@ const Login = () => {
         return <Loading />
     }
 
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
         toast.success('Login Successful')
 

@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../Firebase/Firebase.init';
 import Loading from '../../Pages/Shared/Spinner/Loading';
+import useToken from '../../UseToken/UseToken';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
@@ -20,6 +21,7 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, UpError] = useUpdateProfile(auth);
+    const [token] = useToken(user);
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
@@ -34,7 +36,7 @@ const Register = () => {
         return <Loading />
     }
 
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
         toast.success('Registration successful')
 

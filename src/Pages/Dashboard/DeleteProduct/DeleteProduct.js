@@ -40,22 +40,22 @@ const DeleteProduct = () => {
                     </thead>
                     <tbody>
 
-                        {products.map(product => <tr>
+                        {products.map(product => <tr key={product._id}>
 
                             <td>{product.name}</td>
                             <td>${product.price}</td>
                             <td>{product.availableQuantity}</td>
 
 
-                            <section>
+                            <>
 
-                                <td><label for="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 text-md modal-button">Remove</label></td>
+                                <td><label htmlFor="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 text-md modal-button">Remove</label></td>
 
 
                                 <input type="checkbox" id="tribal-modal" className="modal-toggle" />
                                 <div className="modal bg-violet-50">
                                     <div className="modal-box">
-                                        <label for="tribal-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                                        <label for="tribal-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                                         <h3 className="font-bold text-lg ">Product name:<span className='text-emerald-500'> {product.name}</span></h3>
                                         <p className="py-4 text-lg">Price per pics:<span className='text-blue-500'>${product.price}</span></p>
 
@@ -63,7 +63,7 @@ const DeleteProduct = () => {
 
                                     </div>
                                 </div>
-                            </section>
+                            </>
                         </tr>)}
                     </tbody>
                 </table>
