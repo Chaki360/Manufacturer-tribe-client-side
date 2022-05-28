@@ -10,7 +10,7 @@ const Product = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://manufacture-tribe.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -20,7 +20,7 @@ const Product = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
 
-        const url = `http://localhost:5000/order`;
+        const url = `https://manufacture-tribe.herokuapp.com/order`;
         fetch(url, {
             method: 'POST',
             headers: {
