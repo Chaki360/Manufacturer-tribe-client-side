@@ -9,9 +9,9 @@ import useToken from '../../UseToken/UseToken';
 
 const SocialLogin = () => {
     const navigate = useNavigate();
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, guser, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
-    const [token] = useToken(user || gitUser);
+    const [token] = useToken(guser || gitUser);
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
     if (error || gitError) {
@@ -24,7 +24,7 @@ const SocialLogin = () => {
         return <Loading />
     }
 
-    if (user || gitUser) {
+    if (guser || gitUser) {
         navigate(from, { replace: true });
         toast.success('Sign In Successful')
 
