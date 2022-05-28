@@ -7,7 +7,7 @@ const UsersInfo = ({ user }) => {
 
     const handleRemoveUser = id => {
 
-        const url = `http://localhost:5000/user/${id}`
+        const url = `https://manufacture-tribe.herokuapp.com/user/${id}`
         fetch(url, {
             method: 'DELETE'
         })
@@ -22,7 +22,7 @@ const UsersInfo = ({ user }) => {
 
     const makeAdmin = id => {
 
-        const url = `http://localhost:5000/user/admin/${email}`
+        const url = `https://manufacture-tribe.herokuapp.com/user/admin/${email}`
         fetch(url, {
             method: 'PUT'
         })
