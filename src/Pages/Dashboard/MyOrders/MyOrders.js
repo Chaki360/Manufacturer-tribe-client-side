@@ -24,13 +24,13 @@ const MyOrders = () => {
 
     const handleCancelOrder = id => {
 
-        const url = `http://localhost:5000/order/${id}`
+        const url = `http://localhost:5000/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+
                 toast.success(`Order has been canceled `)
 
             })
@@ -63,24 +63,8 @@ const MyOrders = () => {
                             <td>{order.email}</td>
                             <td>{order.address}</td>
                             <td><Link to='/payment' className="btn btn-sm btn-success">Pay</Link></td>
+                            <td><button onClick={() => handleCancelOrder(order._id)} className='btn btn-sm btn-error'> Cancel</button></td>
 
-                            <div>
-
-                                <td><label for="tribal-modal" className="btn-error text-slate-100 rounded-md px-1 py-1 text-md modal-button">Cancel</label></td>
-
-
-                                <input type="checkbox" id="tribal-modal" className="modal-toggle" />
-                                <div className="modal bg-violet-50">
-                                    <div className="modal-box">
-                                        <label for="tribal-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                        <h3 className="font-bold text-lg ">Product name:<span className='text-emerald-500'> {order.productName}</span></h3>
-                                        <p className="py-4 text-lg">Order Quantity:<span className='text-blue-500'>{order.orderNumber}</span></p>
-
-                                        <button for='tribal-model' onClick={() => handleCancelOrder(order._id)} className='btn-error flex justify-center text-white items-center rounded px-1 py-1'>Confirm Cancel</button>
-
-                                    </div>
-                                </div>
-                            </div>
 
 
                         </tr>)}

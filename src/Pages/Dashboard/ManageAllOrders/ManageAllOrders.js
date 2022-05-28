@@ -20,11 +20,7 @@ const ManageAllOrders = () => {
             })
                 .then(res => {
                     console.log('res', res);
-                    if (res.status === 401 || res.status === 403) {
-                        signOut(auth);
-                        localStorage.removeItem('accessToken');
-                        Navigate('/');
-                    }
+
                     return res.json()
                 })
                 .then(data => {
@@ -32,10 +28,10 @@ const ManageAllOrders = () => {
                     setOrders(data);
                 });
         }
-    }, [user]);
+    }, [orders]);
     const handleDeleteOrder = id => {
 
-        const url = `http://localhost:5000/order/${id}`
+        const url = `http://localhost:5000/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
@@ -87,7 +83,7 @@ const ManageAllOrders = () => {
                                         <p className="py-4 text-lg">User Email: <span className='text-blue-500'>{order.email}</span></p>
                                         <label for="tribal-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                                         <h3 className="font-bold text-lg ">Product name: <span className='text-emerald-500'> {order.productName}</span></h3>
-                                        <p className="py-4 text-lg">Order Quantity: <span className='text-lime-600'>{order.orderNumber}</span></p>
+                                        <p className="py-4 text-lg">Ordered Quantity: <span className='text-lime-600'>{order.orderNumber}</span></p>
 
 
                                         <button for='tribal-model' onClick={() => handleDeleteOrder(order._id)} className='btn-error flex justify-center text-white items-center rounded px-1 py-1'>Confirm Delete</button>
