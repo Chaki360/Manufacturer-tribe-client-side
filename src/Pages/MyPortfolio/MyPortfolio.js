@@ -3,7 +3,7 @@ import React from 'react';
 const MyPortfolio = () => {
     return (
         <div className='flex justify-center items-center mt-20'>
-            <div className="card  w-96 bg-base-100 shadow-xl">
+            <div className="card  w-96 bg-slate-50 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">Badhon Chaki</h2>
                     <h3 className='text-lg'>Something about me?</h3>

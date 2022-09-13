@@ -24,14 +24,14 @@ const Homepage = () => {
         <div >
             <Banner></Banner>
             <h1 className='text-4xl mb-4 mt-5  text-center font-bold text-violet-800'>Our Products</h1>
-            <div className='products bg-violet-50'>
+            <div className='products justify-items-center bg-violet-50'>
                 {products.map(product => <ProductsData key={product._id} product={product}></ProductsData>)}
             </div>
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Trusted by thousands of user</h1>
             <Statistics></Statistics>
             <PricingPlan></PricingPlan>
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What customer says about us</h1>
-            <div className='review'>
+            <div className='review justify-items-center'>
                 {reviews.map(review => <CustomersReview key={review._id} review={review}></CustomersReview>)}
             </div>
 

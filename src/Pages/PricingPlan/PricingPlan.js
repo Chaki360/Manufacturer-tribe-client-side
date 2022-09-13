@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricingPlan = () => {
     return (
-        <div className='bg-violet-50'>
+        <div className='bg-violet-50 justify-items-center'>
             <div className="xl:mx-auto xl:container mt-5 py-20 2xl:px-0 px-6">
                 <div className="lg:flex items-center justify-between">
                     <div className=" lg:w-1/2 w-full">

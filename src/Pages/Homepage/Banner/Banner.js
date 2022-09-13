@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen bg-violet-50">
+        <div className="hero min-h-screen bg-violet-50 justify-items-center">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img className='  w-screen ' src="https://i.ibb.co/GH2LsG6/stinger-cn100b-removebg-preview.png" alt="" />
                 <div>

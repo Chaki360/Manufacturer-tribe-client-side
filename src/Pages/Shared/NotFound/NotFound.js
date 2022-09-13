@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-slate-50">
                 <div className="hero-content flex-col lg:flex-row">
                     <img src="https://i.ibb.co/SrnxrVR/dogyy-confused.png" alt='' className='max-w-md' />
                     <div>

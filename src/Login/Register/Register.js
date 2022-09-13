@@ -42,7 +42,7 @@ const Register = () => {
 
     }
     return (
-        <div>
+        <div className='justify-items-center'>
             <section className="py-20 bg-violet-50">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-lg mx-auto">

@@ -2,7 +2,7 @@ import React from 'react';
 import './Blogs.css'
 const Blogs = () => {
     return (
-        <section className=' mt-10 blog-items bg-violet-50'>
+        <section className='justify-items-center mt-10 blog-items bg-violet-50'>
 
 
             <div className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">

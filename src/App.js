@@ -27,10 +27,6 @@ import Payment from "./Pages/Dashboard/Payment/Payment";
 
 
 
-
-
-
-
 function App() {
   return (
     <div className="app">
