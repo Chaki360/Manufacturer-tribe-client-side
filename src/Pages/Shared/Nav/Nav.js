@@ -17,9 +17,10 @@ const Nav = () => {
     }
     const menuItems = <>
         <li>{user && <Link to='/dashboard' className=" text-violet-50 font-semibold">Dashboard</Link>}</li>
-        <li>{user && <Link to='/portfolio' className=" text-violet-50 font-semibold">My Portfolio</Link>}</li>
+
         <li><Link className='text-violet-50 font-semibold' to="/">Home</Link></li>
         <li><Link className='text-violet-50 font-semibold' to="/all-products">Products</Link></li>
+        <li><Link className='text-violet-50 font-semibold' to="/all-reviews">Reviews</Link></li>
 
         <li><Link className='text-violet-50 font-semibold' to="/blogs">Blogs</Link></li>
         <li><Link className='text-violet-50 font-semibold' to="/about">About</Link></li>

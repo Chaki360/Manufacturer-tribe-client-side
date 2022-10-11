@@ -3,7 +3,8 @@ import React from 'react';
 const PricingPlan = () => {
     return (
         <div className='bg-violet-50 justify-items-center'>
-            <div className="xl:mx-auto xl:container mt-5 py-20 2xl:px-0 px-6">
+            <h1 className='text-4xl mt-5  text-center font-bold text-violet-800'>Our Available Pricing Plans</h1>
+            <div className="xl:mx-auto xl:container  py-20 2xl:px-0 px-6">
                 <div className="lg:flex items-center justify-between">
                     <div className=" lg:w-1/2 w-full">
 
