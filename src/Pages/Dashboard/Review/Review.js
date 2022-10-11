@@ -7,7 +7,7 @@ const Review = () => {
     const onSubmit = data => {
 
 
-        const url = `https://manufacture-tribe.herokuapp.com/review`;
+        const url = `https://manufacturer-tribe-server-side.onrender.com/review`;
         fetch(url, {
             method: 'POST',
             headers: {

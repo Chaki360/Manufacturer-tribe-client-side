@@ -12,7 +12,7 @@ const ManageAllOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch('https://manufacture-tribe.herokuapp.com/orders', {
+            fetch('https://manufacturer-tribe-server-side.onrender.com/orders', {
                 method: "GET",
                 headers: {
                     "authorization": `Bearer ${localStorage.getItem("accessToken")} `
@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
     }, [orders]);
     const handleDeleteOrder = id => {
 
-        const url = `https://manufacture-tribe.herokuapp.com/orders/${id}`
+        const url = `https://manufacturer-tribe-server-side.onrender.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })

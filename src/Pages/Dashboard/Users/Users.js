@@ -5,7 +5,7 @@ import UsersInfo from './UsersInfo';
 const AllUsers = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('https://manufacture-tribe.herokuapp.com/user')
+        fetch('https://manufacturer-tribe-server-side.onrender.com/user')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [users]);

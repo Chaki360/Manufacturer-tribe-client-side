@@ -9,7 +9,7 @@ const DeleteProduct = () => {
 
     const handleDeleteProduct = id => {
 
-        const url = `https://manufacture-tribe.herokuapp.com/product/${id}`
+        const url = `https://manufacturer-tribe-server-side.onrender.com/product/${id}`
         fetch(url, {
             method: 'DELETE'
         })

@@ -10,7 +10,7 @@ const AddProducts = () => {
     const onSubmit = data => {
         const proceed = window.confirm('Everything OK?');
         if (proceed) {
-            const url = `https://manufacture-tribe.herokuapp.com/product`;
+            const url = `https://manufacturer-tribe-server-side.onrender.com/product`;
             fetch(url, {
                 method: 'POST',
                 headers: {

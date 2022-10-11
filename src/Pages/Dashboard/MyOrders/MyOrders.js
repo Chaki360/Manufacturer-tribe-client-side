@@ -15,7 +15,7 @@ const MyOrders = () => {
 
         const getOrders = async () => {
             const email = user.email;
-            const url = `https://manufacture-tribe.herokuapp.com/order?email=${email}`
+            const url = `https://manufacturer-tribe-server-side.onrender.com/order?email=${email}`
             const { data } = await axios.get(url)
             setOrders(data)
         }
@@ -24,7 +24,7 @@ const MyOrders = () => {
 
     const handleCancelOrder = id => {
 
-        const url = `https://manufacture-tribe.herokuapp.com/orders/${id}`
+        const url = `https://manufacturer-tribe-server-side.onrender.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
