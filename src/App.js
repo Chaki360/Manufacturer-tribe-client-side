@@ -24,6 +24,8 @@ import NewsLatter from "./Pages/NewsLatter/NewsLatter";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import Users from "./Pages/Dashboard/Users/Users";
 import Payment from "./Pages/Dashboard/Payment/Payment";
+import Products from "./Pages/Product/Products/Products";
+import ContactUs from "./ContactUs/ContactUs";
 
 
 
@@ -35,7 +37,9 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/home' element={<Homepage />} />
         <Route path='/blogs' element={<Blogs />} />
+        <Route path='/all-products' element={<Products />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<ContactUs />} />
         <Route path='/portfolio' element={<MyPortfolio />} />
         <Route path='/product/:productId' element={<PrivateRoute><Product /></PrivateRoute>} />
         <Route path='/payment' element={<PrivateRoute><Payment /></PrivateRoute>} />

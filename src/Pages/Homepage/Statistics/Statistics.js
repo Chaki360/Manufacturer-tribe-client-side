@@ -7,7 +7,7 @@ const Statistics = () => {
                 <div className="stat">
 
                     <div className="stat-value text-primary">75000</div>
-                    <div className="stat-title">User Visitors</div>
+                    <div className="stat-title">Organic Visitors</div>
                     <div className="stat-desc text-primary">Average in Quarter</div>
                 </div>
                 <div className="stat">
