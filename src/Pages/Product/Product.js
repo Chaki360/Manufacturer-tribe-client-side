@@ -42,7 +42,7 @@ const Product = () => {
     return (
         <div>
             <div className="flex mt-24 max-h-screen w-full">
-                <div className="flex flex-col lg:flex-row w-full items-start lg:items-center rounded bg-white shadow">
+                <div className="flex flex-col lg:flex-row w-full items-start lg:items-center rounded bg-violet-50 shadow">
                     <div className=" lg:w-2/3 h-64 w-72 align-middle text-center dark:bg-gray-800"> <h3 className="font-bold text-lg ">Your Name:<span className='text-emerald-500'> {user?.displayName}</span></h3>
                         <h3 className=" text-lg">Your Email:<span className='text-blue-500'> {user?.email}</span></h3>
                         <div className='mt-4'>
@@ -57,27 +57,27 @@ const Product = () => {
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Product Name</label>
-                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={product.name} {...register("productName")} />
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={product.name} {...register("productName")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Your Name</label>
-                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.displayName} {...register("userName")} />
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.displayName} {...register("userName")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Your Email</label>
-                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.email} {...register("email")} />
+                                <input type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" value={user.email} {...register("email")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal ">Address</label>
-                                <input autocomplete="off" type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Enter your address here" {...register("address")} />
+                                <input autocomplete="off" type="text" className="text-gray-600 px-2 mb-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Enter your address here" {...register("address")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label className="text-gray-800 dark:text-gray-100 text-sm font-bold leading-tight tracking-normal mb-2">Phone</label>
-                                <input type="text" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Your Phone number" {...register("phone")} />
+                                <input type="text" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Your Phone number" {...register("phone")} />
                             </div>
                             <div className="flex flex-col lg:mr-16">
                                 <label for="email" className="text-gray-800  dark:text-gray-100 text-sm font-bold leading-tight tracking-normal mb-2">Order number</label>
-                                <input type="number" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-white font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Number you want to order" {...register("orderNumber")} />
+                                <input type="number" className="text-gray-600 px-2 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-700 dark:focus:border-violet-700 dark:border-gray-700 dark:bg-gray-800 bg-violet-50 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border shadow" placeholder="Number you want to order" {...register("orderNumber")} />
                             </div>
 
 

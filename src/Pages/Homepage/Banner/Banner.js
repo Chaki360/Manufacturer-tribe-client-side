@@ -2,9 +2,9 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen bg-violet-50 justify-items-center">
+        <div className="hero mt-20 mb-10 bg-violet-50 justify-items-center">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img className='  w-screen ' src="https://i.ibb.co/GH2LsG6/stinger-cn100b-removebg-preview.png" alt="" />
+                <img className='  w-screen ' src="https://i.ibb.co/VvR68W9/s-l400-removebg-preview.png" alt="" />
                 <div>
                     <h1 className="text-5xl font-bold">We don't believe in <span className='text-red-600'>obstacles</span>,</h1>
                     <h1 className="text-5xl font-bold">Only believe in <span className='text-green-600'>success!</span></h1>

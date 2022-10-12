@@ -18,14 +18,14 @@ const PricingPlan = () => {
                     </div>
                     <div className="xl:w-1/2 lg:w-7/12 relative w-full lg:mt-0 mt-12 md:px-8" role="list">
                         <img src="https://i.ibb.co/0n6DSS3/bgimg.png" className="absolute w-full -ml-12 mt-24" alt="background circle images" />
-                        <div className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30">
+                        <div className="bg-violet-50 cursor-pointer shadow rounded-lg p-8 relative z-30">
                             <div className="md:flex items-center justify-between">
                                 <h2 className="text-2xl font-semibold leading-6 text-primary">Startup</h2>
                                 <p className="text-2xl font-semibold md:mt-0 mt-4 leading-6 text-green-600">FREE</p>
                             </div>
                             <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">Full access to all features and no credit card required</p>
                         </div>
-                        <div className="bg-white cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                        <div className="bg-violet-50 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
                             <div className="w-2.5  h-auto bg-violet-800 rounded-tl-md rounded-bl-md" />
                             <div className="w-full p-8">
                                 <div className="md:flex items-center justify-between">
@@ -37,7 +37,7 @@ const PricingPlan = () => {
                                 <p className="md:w-80 text-base leading-6 mt-4 text-gray-600">Unlimited products features and dedicated support channels</p>
                             </div>
                         </div>
-                        <div className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
+                        <div className="bg-violet-50 cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
                             <div className="md:flex items-center justify-between">
                                 <h2 className="text-2xl font-semibold leading-6 text-primary">Expansion</h2>
                                 <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-yellow-600">

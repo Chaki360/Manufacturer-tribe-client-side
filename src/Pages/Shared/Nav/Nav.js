@@ -21,8 +21,9 @@ const Nav = () => {
         <li><Link className='text-violet-50 font-semibold' to="/">Home</Link></li>
         <li><Link className='text-violet-50 font-semibold' to="/all-products">Products</Link></li>
         <li><Link className='text-violet-50 font-semibold' to="/all-reviews">Reviews</Link></li>
-        <li><Link className='text-violet-50 font-semibold' to="/blogs">Blogs</Link></li>
+
         <li><Link className='text-violet-50 font-semibold' to="/about">About</Link></li>
+        <li><Link className='text-violet-50 font-semibold' to="/blogs">Blogs</Link></li>
         <li><Link className='text-violet-50 font-semibold' to="/contact">Contact</Link></li>
 
         <li>{user && <span className=" text-emerald-300 subpixel-antialiased font-rubik text-2xl  font-bold">{user.displayName}</span>}</li>

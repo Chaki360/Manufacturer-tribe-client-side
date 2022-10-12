@@ -52,7 +52,7 @@ const Register = () => {
                         </div>
                         <form onSubmit={handleSubmit(onSubmit)} className='shadow-lg rounded-lg'><div className="form-control mb-3">
                             <label className="block mb-1 font-extrabold" >Name</label>
-                            <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-white shadow border-2 border-slate-800 rounded-lg" type="text" placeholder="Enter your name"   {...register("name", {
+                            <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded-lg" type="text" placeholder="Enter your name"   {...register("name", {
                                 required: {
                                     value: true,
                                     message: 'Name is Required'
@@ -64,7 +64,7 @@ const Register = () => {
                         </div>
                             <div className="mb-3 form-control">
                                 <label className="block mb-1 font-extrabold" >Email</label>
-                                <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-white shadow border-2 border-slate-800 rounded-lg" type="email" placeholder="Enter your email"   {...register("email", {
+                                <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded-lg" type="email" placeholder="Enter your email"   {...register("email", {
                                     required: {
                                         value: true,
                                         message: 'Email is Required'
@@ -81,7 +81,7 @@ const Register = () => {
                             </div>
                             <div className="mb-5 form-control">
                                 <label className="block mb-1 font-extrabold" >Password</label>
-                                <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-white shadow border-2 border-slate-800 rounded-lg" type="password" placeholder="Enter your password"    {...register("password", {
+                                <input className="inline-block w-full py-2 px-1  text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded-lg" type="password" placeholder="Enter your password"    {...register("password", {
                                     required: {
                                         value: true,
                                         message: 'Password is Required'

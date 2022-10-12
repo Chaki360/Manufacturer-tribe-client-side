@@ -6,6 +6,7 @@ import Statistics from './Statistics/Statistics';
 import CustomersReview from './CustomersReview/CustomersReview';
 import PricingPlan from '../PricingPlan/PricingPlan';
 import { Link } from 'react-router-dom';
+import ContactUs from '../../ContactUs/ContactUs';
 
 const Homepage = () => {
     const [products, setProducts] = useState([]);
@@ -34,11 +35,15 @@ const Homepage = () => {
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Trusted by thousands of user</h1>
             <Statistics></Statistics>
             <PricingPlan></PricingPlan>
-            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What customer says about us</h1>
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Makes Us Different From Others</h1>
+
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Customer Says About Us</h1>
+
+
             <div className='review justify-items-center'>
                 {reviews.map(review => <CustomersReview key={review._id} review={review}></CustomersReview>)}
             </div>
-
+            <ContactUs />
 
         </div>
     );

@@ -48,12 +48,12 @@ const Login = () => {
                             <div className="mb-6">
                                 <label className="block mb-2 font-extrabold" >Email</label>
                                 <input value={email}
-                                    onChange={(e) => setEmail(e.target.value)} required className="inline-block w-full py-2 px-1 text-lg font-bold bg-white shadow border-2 border-slate-800 rounded-lg" type="email" placeholder="Enter your email" />
+                                    onChange={(e) => setEmail(e.target.value)} required className="inline-block w-full py-2 px-1 text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded-lg" type="email" placeholder="Enter your email" />
                             </div>
                             <div className="mb-6">
                                 <label className="block mb-2 font-extrabold" >Password</label>
                                 <input value={password}
-                                    onChange={(e) => setPassword(e.target.value)} required className="inline-block w-full py-2 px-1  text-lg font-bold bg-white shadow border-2 border-slate-800 rounded-lg" type="password" placeholder="Your current password" />
+                                    onChange={(e) => setPassword(e.target.value)} required className="inline-block w-full py-2 px-1  text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded-lg" type="password" placeholder="Your current password" />
                             </div>
                             <div className="w-full lg:w-auto mb-2"><Link to='/reset-password' className="inline-block font-extrabold hover:underline" >Forgot your password?</Link></div>
 

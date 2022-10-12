@@ -31,7 +31,7 @@ const ResetPassWord = () => {
                             <div className="mb-6">
                                 <label className="block mb-1 font-extrabold" >Email</label>
                                 <input value={email}
-                                    onChange={(e) => setEmail(e.target.value)} required className="inline-block w-full py-2 px-1 text-lg font-bold bg-white shadow border-2 border-slate-800 rounded" type="email" placeholder="Enter your email" />
+                                    onChange={(e) => setEmail(e.target.value)} required className="inline-block w-full py-2 px-1 text-lg font-bold bg-violet-50 shadow border-2 border-slate-800 rounded" type="email" placeholder="Enter your email" />
                             </div>
 
 
