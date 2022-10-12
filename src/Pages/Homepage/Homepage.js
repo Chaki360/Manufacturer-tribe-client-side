@@ -7,6 +7,7 @@ import CustomersReview from './CustomersReview/CustomersReview';
 import PricingPlan from '../PricingPlan/PricingPlan';
 import { Link } from 'react-router-dom';
 import ContactUs from '../../ContactUs/ContactUs';
+import Construction from './Construction/Construction';
 
 const Homepage = () => {
     const [products, setProducts] = useState([]);
@@ -36,7 +37,8 @@ const Homepage = () => {
             <Statistics></Statistics>
             <PricingPlan></PricingPlan>
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Makes Us Different From Others</h1>
-
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our Under Developing Products</h1>
+            <Construction />
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Customer Says About Us</h1>
 
 

@@ -8,7 +8,7 @@ const ContactUs = () => {
         <div className='contact-page bg-violet-50'>
             <div className='text-center lg:pr-0 pr-6'>
                 <h1 className='text-4xl mb-4 mt-5 text-center font-bold text-violet-800'>Contact Anytime to Our Expert </h1>
-                <p className='font-normal text-xl'>Contact us to speak with one of our team members about how we can help<br /> you mitigate risk, see around the corner, and gain the upper hand.</p>
+                <p className='font-normal text-center text-xl'>Contact us to speak with one of our team members about how we can help<br /> you mitigate risk, see around the corner, and gain the upper hand.</p>
 
 
 
@@ -30,7 +30,7 @@ const ContactUs = () => {
                         </div>
                         <div>
                             <p>Our Email</p>
-                            <p>tribe@manufacturer.query</p>
+                            <p>query@manufacturer-tribe.com</p>
                         </div>
                     </div>
                     <div className='flex lg:pl-0 pl-4 gap-4 text-black'>

@@ -11,8 +11,8 @@ const AllUsers = () => {
     }, [users]);
     return (
         <div>
-            <div class="overflow-x-auto w-screen lg:w-full">
-                <table class="table w-full">
+            <div className="overflow-x-auto w-screen lg:w-full">
+                <table className="table w-full">
 
                     <thead>
                         <tr>

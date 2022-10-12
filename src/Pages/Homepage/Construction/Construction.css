@@ -1,0 +1,28 @@
+/* .construction-card {
+    height: 700px;
+    width: 470px;
+} */
+
+.construction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+@media only screen and (max-width: 576px) {
+    .construction {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:580px) and (max-width: 992px) {
+    .construction {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width: 1400px) {
+    .construction {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

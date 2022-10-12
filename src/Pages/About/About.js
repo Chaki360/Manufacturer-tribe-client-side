@@ -50,11 +50,11 @@ const About = () => {
                 </div>
             </div>
 
-            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Interested in exploring more about Manufacturer Tribe?</h1>
-            <p className='text-2xl text-center font-bold'>Contact Manufacturer Tribe and speak with an business expert to<br /> discuss your organization or business needs.</p>
-            <div className='text-center mt-14 mb-10'>
-                <Link to='/contact' className=" text-white bg-gradient-to-r from-violet-500 via-violet-600 to-violet-700  font-bold rounded-lg text-sm px-5 py-4 hover:text-white hover:bg-violet-700 text-center">Talk to an Expert</Link>
-            </div>
+            <div >   <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Interested in exploring more about Manufacturer Tribe?</h1>
+                <p className='text-2xl text-center font-bold'>Contact Manufacturer Tribe and speak with an business expert to<br /> discuss your organization or business needs.</p>
+                <div className='text-center mt-14 mb-10'>
+                    <Link to='/contact' className=" text-white bg-gradient-to-r from-violet-500 via-violet-600 to-violet-700  font-bold rounded-lg text-sm px-5 py-4 hover:text-white hover:bg-violet-700 text-center">Talk to an Expert</Link>
+                </div></div>
         </section>
     );
 };
