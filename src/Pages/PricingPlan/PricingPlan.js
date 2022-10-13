@@ -8,10 +8,12 @@ const PricingPlan = () => {
                 <div className="lg:flex items-center justify-between">
                     <div className=" lg:w-1/2 w-full">
 
-                        <h1 className="md:text-5xl text-3xl font-bold leading-10 mb-4 mt-5 text-violet-800">
-                            Work with our company
+                        <h1 className="text-4xl font-bold mb-4 mt-5 text-violet-800">
+                            We help you to grow your business
                         </h1>
-                        <p className="text-base leading-5 mt-5 text-gray-600">
+                        <p className="text-lg leading-5 mt-5 text-gray-600">
+                            We’re working on a suit of tools to make managing <br />complex systems easier, for everyone for free. we can’t wait to hear what you think
+                            We’re working on a suit of <br />tools to make managing complex systems easier, for everyone for free. we can’t wait to hear what you think<br />
                             We’re working on a suit of tools to make managing complex systems easier, for everyone for free. we can’t wait to hear what you think
                         </p>
 

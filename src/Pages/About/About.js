@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Team from '../Team/Team';
 
 const About = () => {
     return (
@@ -24,6 +25,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our Dedicated Team Members</h1>
+            <Team />
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our History</h1>
             <div className="hero my-12 bg-violet-50">
 
