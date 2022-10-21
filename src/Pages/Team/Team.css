@@ -1,0 +1,23 @@
+.team-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .team-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:580px) and (max-width: 992px) {
+    .team-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width: 1400px) {
+    .team-info {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

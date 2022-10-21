@@ -39,8 +39,9 @@ const Homepage = () => {
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Makes Us Different From Others</h1>
             <h1 className='text-4xl mb-12 mt-10 text-center  font-bold text-violet-800'>Our Exciting Under Developing Products</h1>
             <Construction />
-            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Customer Says About Us</h1>
 
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Who We Serve</h1>
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>What Customer Says About Us</h1>
 
             <div className='review justify-items-center'>
                 {reviews.map(review => <CustomersReview key={review._id} review={review}></CustomersReview>)}

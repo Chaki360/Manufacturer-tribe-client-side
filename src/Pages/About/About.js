@@ -25,8 +25,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our Dedicated Team Members</h1>
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Meet With Our
+                Awesome And Expert Team</h1>
             <Team />
+            <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our Local & International Branches</h1>
             <h1 className='text-4xl mb-4 mt-5 text-center  font-bold text-violet-800'>Our History</h1>
             <div className="hero my-12 bg-violet-50">
 
