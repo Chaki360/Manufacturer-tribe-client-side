@@ -9,18 +9,27 @@ import auth from '../../../Firebase/Firebase.init';
 const MyOrders = () => {
 
     const [orders, setOrders] = useState([]);
-    const [user] = useAuthState(auth);
 
     useEffect(() => {
+        const email = user.email;
+        fetch(`https://manufacturer-tribe-server-side.onrender.com/order?email=${email}`)
+            .then(res => res.json())
+            .then(data => setOrders(data))
+    }, [orders]);
 
-        const getOrders = async () => {
-            const email = user.email;
-            const url = `https://manufacturer-tribe-server-side.onrender.com/order?email=${email}`
-            const { data } = await axios.get(url)
-            setOrders(data)
-        }
-        getOrders()
-    }, [user])
+    const [user] = useAuthState(auth);
+
+    // useEffect(() => {
+
+    //     const getOrders = async () => {
+    //         const email = user.email;
+    //         const url = `https://manufacturer-tribe-server-side.onrender.com/order?email=${email}`
+    //         const { data } = await axios.get(url)
+    //         setOrders(data)
+    //     }
+    //     getOrders()
+    // }, [user])
+
 
     const handleCancelOrder = id => {
 
@@ -30,11 +39,13 @@ const MyOrders = () => {
         })
             .then(res => res.json())
             .then(data => {
-
-                toast.success(`Order has been canceled `)
-
+                if (data.deleteCount > 0) {
+                    const remaining = orders.filter(order => order._id !== id);
+                    setOrders(remaining)
+                }
+                console.log(data);
+                toast.warning("Order Canceled")
             })
-
     }
 
     return (

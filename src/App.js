@@ -40,7 +40,7 @@ function App() {
         <Route path='/all-products' element={<Products />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<ContactUs />} />
-        <Route path='/portfolio' element={<MyPortfolio />} />
+
         <Route path='/product/:productId' element={<PrivateRoute><Product /></PrivateRoute>} />
         <Route path='/payment' element={<PrivateRoute><Payment /></PrivateRoute>} />
         <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>} >
